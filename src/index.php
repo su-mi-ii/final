@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title> </title>
-    </head>
-    <body>
-    <table border='3'>
-    <tr>
-        <th>番号</th>
-        <th>音楽名</th>
-        <th>アーティスト名</th>
-        <th>プレイリスト</th>
-    </tr>
-    <?php
-    $pdo=new PDO('mysql:host=mysql219.phy.lolipop.lan;dbname=LAA1517468-final;charset=utf8','LAA1517468','pass1218');
-    foreach ($pdo->query('select * from music') as $row){ 
+<head>
+    <meta charset="UTF-8">
+    <title>Your Title Here</title>  
+</head>
+<body>
+    <h1>プレイリスト</h1>
+    <form action="list.php" method="post">
+        <button type="submit">一覧</button>
+    </form>
 
-        echo '<tr>';
-        echo '<td>',$row['id'],'</td>';
-        echo '<td>',$row['music'],'</td>';
-        echo '<td>',$row['artist'],'</td>';
-        echo '<td>',$row['list'],'</td>';
-        echo '</tr>';
-        echo "\n";
-    }
-    ?>
-    </table>
-    </body>
+    <form action="Register.php" method="post">
+        <button type="submit">登録</button>
+    </form>
+
+    <form action="update.php" method="post">
+        <button type="submit">更新</button>
+    </form>
+
+    <form action="delete.php" method="post">
+        <button type="submit">削除</button>
+    </form>
+</body>
 </html>
