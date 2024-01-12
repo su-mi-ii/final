@@ -13,7 +13,7 @@
         <th>プレイリスト</th>
     </tr>
     <?php
-    $pdo=new PDO('mysql:host=mysql219.phy.lolipop.lan;dbname=LAA1517468-sample;charset=utf8','LAA1517468','pass1218');
+    $pdo=new PDO('mysql:host=mysql219.phy.lolipop.lan;dbname=LAA1517468-final;charset=utf8','LAA1517468','pass1218');
     foreach ($pdo->query('select * from music') as $row){ 
 
         echo '<tr>';
