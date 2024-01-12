@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title> kadai6-3-1</title>
+        <title> </title>
     </head>
     <body>
     <table border='3'>
