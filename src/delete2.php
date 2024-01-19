@@ -28,6 +28,9 @@
             echo "<p>No music found for {$_POST['listname']}</p>";
         }
         ?>
+    <form action="index.php" method="post">
+        <button type="submit">Back to Top</button>
+    </form>
     </table>
 </body>
 </html>
