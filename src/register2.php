@@ -33,7 +33,7 @@
         $sortOrder = isset($_GET['sort']) ? $_GET['sort'] : 'name';
 
         $list_query = 'SELECT list, listname FROM LIST';
-        $list_query .= ' ORDER BY listname ASC';  // プレイリストの名前でソート
+        $list_query .= ' ORDER BY listname ASC'; 
 
         ?>
 

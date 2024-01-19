@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css">
-    <title>Your Title Here</title>  
+    <title>You and I</title>  
 </head>
 <body>
     <h1>Playlist</h1>
